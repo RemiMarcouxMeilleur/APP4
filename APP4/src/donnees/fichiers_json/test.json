@@ -1,0 +1,52 @@
+{
+  "circuit": {
+    "type": "parallele",
+    "composants": [
+      {
+        "type": "serie",
+        "composants": [
+          { "type": "resistance", "valeur": 1000 },
+          { "type": "resistance", "valeur": 2000 }
+        ]
+      },
+      {
+        "type": "parallele",
+        "composants": [
+          {
+            "type": "serie",
+            "composants": [
+              { "type": "resistance", "valeur": 3000 },
+              { "type": "resistance", "valeur": 3000 }
+            ]
+          },
+          { "type": "resistance", "valeur": 6000 }
+        ]
+      },
+      {
+        "type": "parallele",
+        "composants": [
+          {
+            "type": "serie",
+            "composants": [
+              { "type": "resistance", "valeur": 1000 },
+              { "type": "resistance", "valeur": 2000 }
+            ]
+          },
+          {
+            "type": "parallele",
+            "composants": [
+              {
+                "type": "serie",
+                "composants": [
+                  { "type": "resistance", "valeur": 3000 },
+                  { "type": "resistance", "valeur": 3000 }
+                ]
+              },
+              { "type": "resistance", "valeur": 6000 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
